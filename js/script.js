@@ -10,10 +10,11 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 
     try {
         const response = await fetch('https://script.google.com/macros/s/AKfycbzUDkyWnPwRaSaNUBu1BtKfAYKCo6iocPAGLeuxuNjGDVxY2ZPE4BKthQxE30VRPa5p/exec', {
+            redirect: "follow",
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-            },
+                "Content-Type": "text/plain;charset=utf-8",
+              },
             body: JSON.stringify({ nombre, fecha, correo, mensaje }),
         });
 
