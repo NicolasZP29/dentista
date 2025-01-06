@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Dental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consultorio Dental</h1>
+        <p>Tu salud dental es nuestra prioridad</p>
+    </header>
+
+    <main>
+        <section id="info">
+            <h2>Información del Consultorio</h2>
+            <p>Proveemos servicios de odontología general, limpiezas y revisiones.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="responseMessage"></p>
+        </section>
+
+        <section id="appointments">
+            <h2>Agendar Citas</h2>
+            <iframe src="https://calendly.com/al062379-uacam/cita-dental" width="100%" height="600" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
